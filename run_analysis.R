@@ -106,8 +106,7 @@ complete_data <- complete_data[, c(1, 3, 2, 6, 4, 7, 8, 5)]
 ##Create a second, independent tidy data set with the average of each variable 
 ##for each activity and each subject
 
-tidy_data <- ddply(complete_data, .(subject, run, activity, measurement, variable, 
-                               axis.signal, estimation), numcolwise(mean))
+tidy_data <- ddply(complete_data, .(subject, run, activity, measurement, variable, axis.signal, estimation), numcolwise(mean))
 colnames(tidy_data)[8] <- "average.value"
 
 ##Create .txt file for the tidy dataset

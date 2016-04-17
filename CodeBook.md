@@ -76,6 +76,26 @@ Creates a .txt file for second data set mentioned above.
   `tidy_UCI_HAR.txt`: A text file version of the tidy_data data frame that the 
                       script saves in the working directory
 
+## Variables
+
+`subject': This is an integer id assigned to each subject. It ranges from 1 to 30.
+
+`run`: This is a character string indicating whether the observation is from the training or test measurements. This variable has two categories: `training` and `test`. 
+
+`activity`: This is a character string indicating the activity performed. This variable has six categories: 
+
+`walking`, `walking_ustairs`, `walking_downstairs`, `sitting`, `standing`, `laying`. 
+
+`measurement`: This is a character string indicating what was being measured by the smartphone. This variable has two categories: `time` and `frequency`.
+
+`variable`: This is a character string indicating the measurement tool. Measurements came from accelerometer and gyroscope 3-axial raw signals. This variable has five categories: `body.accelerometer`, `body.accelerometer.jerk`, `body.gyroscope`, `body.gyroscope.jerk`, and `gravity.accelerometer`.
+
+`axis.signal`: This is a character string indicating the axial signal. `x`, `y`, or `z` denote signals in the x, y, or z directions, respectively. `magnitude` denotes the magnitude of the three signals. This variable has four categories: `x`, `y`, `z`, and `magnitude`.
+
+`estimation`: This is a character string indicating the estimation method (i.e., mean or standard deviation) of the oberservation. This variable has two categories: `mean` and `std`.
+
+`average.value`: This is a numeric field indicating the mean of all observations for each measurement, grouped by subject and activity.  
+
 ## References
 
 [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. 
